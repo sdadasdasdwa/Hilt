@@ -9,7 +9,12 @@ import dagger.hilt.android.components.ActivityComponent
 @InstallIn(ActivityComponent::class)
 abstract class EngineModule {
 
+    @BindGasEngine
     @Binds
-    abstract fun bindEngine(gasEngine: GasEngine):Engine
+    abstract fun bindGasEngine(gasEngine: GasEngine):Engine
+
+    @BindElectricEngine
+    @Binds
+    abstract fun bindElectircEngine(electricEngine: ElectricEngine):Engine
 
 }
