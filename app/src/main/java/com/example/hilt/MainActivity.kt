@@ -13,9 +13,6 @@ class MainActivity : AppCompatActivity() {
     @Inject
     lateinit var truck: Truck
 
-    @Inject
-    lateinit var engine: Engine
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
